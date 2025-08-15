@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Room, TimerData, Developer } from '@/types';
+import { Room, TimerData } from '@/types';
 
 interface RoomState {
   // Room data

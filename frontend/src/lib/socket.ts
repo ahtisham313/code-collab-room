@@ -19,7 +19,7 @@ class SocketManager {
       }
 
       const serverUrl = process.env.NODE_ENV === 'production' 
-        ? 'https://your-backend-domain.herokuapp.com'  // Replace with your deployed backend URL
+        ? 'https://code-collab-room.onrender.com'  
         : 'http://localhost:5000';
 
       this.socket = io(serverUrl, {

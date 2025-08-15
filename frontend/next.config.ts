@@ -37,11 +37,11 @@ const nextConfig = {
   },
 
   // Environment variables
-  env: {
-    NEXT_PUBLIC_SOCKET_URL: process.env.NODE_ENV === 'production' 
-      ? 'https://your-backend-domain.herokuapp.com'  // Replace with your deployed backend URL
-      : 'http://localhost:5000',
-  },
+  // env: {
+  //   NEXT_PUBLIC_SOCKET_URL: process.env.NODE_ENV === 'production' 
+  //     ? 'https://your-backend-domain.herokuapp.com'  // Replace with your deployed backend URL
+  //     : 'http://localhost:5000',
+  // },
 
   // Headers for CORS
   async headers() {

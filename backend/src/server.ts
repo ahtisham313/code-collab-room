@@ -24,7 +24,7 @@ app.use(express.json());
 const io = new SocketIOServer(server, {
   cors: {
     origin: process.env.NODE_ENV === 'production'
-      ? ['https://your-frontend-domain.vercel.app']
+      ? ['https://code-collab-room-alpha.vercel.app/']
       : ['http://localhost:3000'],
     methods: ['GET', 'POST'],
     credentials: true
