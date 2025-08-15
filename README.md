@@ -62,7 +62,7 @@ A real-time, turn-based collaborative coding platform built with Next.js, Node.j
 - **TypeScript**: Full type safety
 
 ### Frontend (Next.js + React)
-- **Next.js 14**: App Router with Server Components
+- **Next.js 15**: App Router with Server Components
 - **Zustand**: Lightweight state management
 - **Monaco Editor**: Professional code editing experience
 - **Tailwind CSS**: Modern, responsive styling
@@ -80,7 +80,7 @@ A real-time, turn-based collaborative coding platform built with Next.js, Node.j
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/code-collaboration-room.git
+git clone https://github.com/ahtisham313/code-collab-room.git
 cd code-collaboration-room
 ```
 
@@ -125,7 +125,8 @@ code-collaboration-room/
 │   ├── package.json
 │   ├── tailwind.config.ts
 │   └── next.config.js
-├── vercel.json                # Deployment configuration
+|   |___tailwind.config.ts
+├── .gitignore               
 └── README.md
 ```
 
@@ -140,7 +141,7 @@ code-collaboration-room/
 ### Joining a Room
 1. Enter your name and the room code
 2. Click "Join Room"
-3. Wait for the session to start automatically
+3.  the session will start automatically
 
 ### During a Session
 - **Active Developer**: Full editing rights with 2-minute turns
@@ -152,7 +153,7 @@ code-collaboration-room/
 
 ## ⚙️ Configuration
 
-### Environment Variables
+<!-- ### Environment Variables
 
 **Backend (.env)**
 ```env
@@ -164,15 +165,14 @@ CORS_ORIGIN=http://localhost:3000
 **Frontend (.env.local)**
 ```env
 NEXT_PUBLIC_SOCKET_URL=http://localhost:5000
-```
+``` -->
 
 ### Production Deployment
 
-1. **Backend**: Deploy to Heroku, Railway, or similar
-2. **Frontend**: Deploy to Vercel (recommended)
-3. **Update URLs**: Change socket URLs in production configs
+1. **Backend**: Deployed on Render
+2. **Frontend**: Deployed to Vercel 
 
-## 🔧 Development
+<!-- ## 🔧 Development
 
 ### Available Scripts
 
@@ -189,7 +189,7 @@ npm run dev        # Start Next.js development
 npm run build      # Build for production
 npm start          # Start production server
 npm run lint       # Run ESLint
-```
+``` -->
 
 ### Adding New Features
 
@@ -198,7 +198,7 @@ npm run lint       # Run ESLint
 3. **State Management**: Update Zustand store in `frontend/src/lib/store.ts`
 4. **Types**: Add to respective `types/` directories
 
-## 🚢 Deployment
+<!-- ## 🚢 Deployment
 
 ### Backend Deployment (Heroku)
 
@@ -222,7 +222,7 @@ npm run lint       # Run ESLint
    ```
    NEXT_PUBLIC_SOCKET_URL=https://your-backend-domain.herokuapp.com
    ```
-4. Deploy automatically on push
+4. Deploy automatically on push -->
 
 ## 🛠️ Tech Stack
 
@@ -261,7 +261,7 @@ npm run lint       # Run ESLint
 - Ensure WebSocket connections are allowed
 
 **Room Not Found**
-- Room codes expire after 30 minutes of inactivity
+- Room codes expire after 13 minutes of inactivity
 - Check for typos in the 6-character code
 - Ensure backend server is accessible
 
@@ -270,7 +270,7 @@ npm run lint       # Run ESLint
 - Browser tab switching may pause client timers
 - Refresh page if timers appear stuck
 
-### Debug Mode
+<!-- ### Debug Mode
 
 Enable debug logging:
 
@@ -281,16 +281,16 @@ DEBUG=socket.io:* npm run dev
 
 **Frontend**
 ```javascript
-localStorage.setItem('debug', 'socket.io-client:*');
-```
+localStorage.setItem('debug', 'socket.io-client:*'); -->
+<!-- ``` -->
 
 ## 📄 API Documentation
 
 ### REST Endpoints
 
 ```
-GET /api/health              # Server health check
-GET /api/stats              # Room statistics
+<!-- GET /api/health              # Server health check -->
+<!-- GET /api/stats              # Room statistics -->
 POST /api/rooms             # Create new room
 GET /api/rooms/:roomId      # Get room info
 ```
