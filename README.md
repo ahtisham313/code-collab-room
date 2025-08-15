@@ -289,8 +289,7 @@ localStorage.setItem('debug', 'socket.io-client:*'); -->
 ### REST Endpoints
 
 ```
-<!-- GET /api/health              # Server health check -->
-<!-- GET /api/stats              # Room statistics -->
+
 POST /api/rooms             # Create new room
 GET /api/rooms/:roomId      # Get room info
 ```
