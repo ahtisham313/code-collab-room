@@ -337,13 +337,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-1. Check the [Troubleshooting](#🐛-troubleshooting) section
-2. Search existing [GitHub Issues](https://github.com/yourusername/code-collaboration-room/issues)
-3. Create a new issue with detailed information
-4. Contact: howdy@techtribedev.com
+<!-- 1. Check the [Troubleshooting](#🐛-troubleshooting) section -->
+<!-- 2. Search existing [GitHub Issues](https://github.com/yourusername/code-collaboration-room/issues) -->
+1. Create a new issue with detailed information
+2. Contact: ahtishamm2030@gmail.com
 
 ---
 
-**Built with ❤️ for developers, by developers**
+**Built with ❤️ for developers, by developer**
 
 *Happy Collaborative Coding! 🎉*
