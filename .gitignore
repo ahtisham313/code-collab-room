@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Build outputs
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+backend/dist/
+backend/build/
+backend/coverage/
+
+# Env files (ignore secrets)
+.env
+.env.*
+frontend/.env*
+backend/.env*
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+.vercel/
